@@ -35,7 +35,9 @@ const Home = () => {
       {error && <div>{error}</div>}
       {weatherData && (
         <div>
-          <div>{"Temperature in kelvin: " + weatherData.main.temp}</div>
+          <div>
+            {"Temperature in kelvin of your city: " + weatherData.main.temp}
+          </div>
         </div>
       )}
     </div>
